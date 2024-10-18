@@ -8,7 +8,7 @@ plt.plot(
     np.poly1d(np.polyfit(data[:, 0], data[:, 1], 1))(np.arange(20)),
     color="r",
 )
-plt.pplot(data[:, 0], data[:, 1])
+plt.scatter(data[:, 0], data[:, 1])
 plt.xlabel("p_T (GeV)")
 plt.ylabel("number of events")
 plt.savefig("plot.png")
