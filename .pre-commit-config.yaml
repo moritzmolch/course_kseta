@@ -1,0 +1,8 @@
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.7.0
+  hooks:
+    # Run the linter.
+    - id: ruff main.py test_main.py
+    # Run the formatter.
+    - id: ruff-format main.py test_main.py
