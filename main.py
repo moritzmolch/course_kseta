@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 DATA_PATH = "data.csv"
 OUTPUT_PATH = "plot.png"
 
+
 def load_data(data_path):
     return np.loadtxt(data_path)
 
@@ -25,4 +26,3 @@ def plot(data, output_path):
 if __name__ == "__main__":
     data = load_data(DATA_PATH)
     plot(data, OUTPUT_PATH)
-

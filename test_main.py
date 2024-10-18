@@ -10,6 +10,7 @@ from main import load_data, plot
 
 TEST_DATA = os.path.join(PROJECT_DIR, "data.csv")
 
+
 def test_load_data():
     data = load_data(TEST_DATA)
     assert data.shape[0] == 200
