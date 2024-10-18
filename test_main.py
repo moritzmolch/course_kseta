@@ -1,12 +1,11 @@
 import numpy as np
-import pytest
 import os
 import sys
 
 PROJECT_DIR = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(PROJECT_DIR)
 
-from main import load_data, plot
+from main import load_data, plot  # noqa
 
 TEST_DATA = os.path.join(PROJECT_DIR, "data.csv")
 
